@@ -35,3 +35,9 @@
 .navbarScroll.navbarDark {
   background-color: black;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
