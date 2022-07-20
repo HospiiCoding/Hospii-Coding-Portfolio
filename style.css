@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .bgimage {
@@ -50,8 +52,11 @@
 .wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: [col1-start] 450px [col2-start] 450px [col3-start] 450px [col3-end];
-  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  max-width: 100%;
+  overflow: scroll;
   background-color: #fff;
   color: rgb(119, 111, 111);
 }
@@ -62,6 +67,7 @@
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
+  word-spacing: 5px;
 }
 
 .a {
