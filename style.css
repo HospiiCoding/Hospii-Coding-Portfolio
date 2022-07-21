@@ -34,7 +34,6 @@
   --navBg: var(--richBlackForeground);
   --navLinkHoverBg: var(--msuGreen);
   --mainBg: var(--msuGreen);
-  --fontColor: rgb(82, 78, 78);
   background-color: rgb(37, 36, 36);
 }
 
