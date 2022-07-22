@@ -221,13 +221,11 @@ nav {
   color: white;
 }
 
-
-
 .aboutMePicture {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 280px;
   float: right;
   border-radius: 5px;
   margin-left: 10px;
@@ -237,7 +235,7 @@ nav {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 275px;
   float: right;
   border-radius: 5px;
   margin-left: 10px;
@@ -269,11 +267,14 @@ nav {
 .a {
   grid-column: "col1-start / col3-start";
   grid-row: "row1-start";
+  margin: 20px;
 }
 
 .b {
   grid-column: "col3-start";
   grid-row: "row1-start / row2-end";
+  margin: 20px;
 }
+
 
 
