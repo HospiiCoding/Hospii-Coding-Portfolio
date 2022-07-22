@@ -3,6 +3,7 @@
   <head>
     <title>Portfolio Website</title>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- linking css file -->
     <link rel="stylesheet" href="style.css" />
@@ -37,7 +38,7 @@
         <a class="navbar-brand" href="#Home">Alex Hernandez</a>
         <!--navbar-brand keeps name of person as a brand-->
         <div id="navbarSupprotedContent">
-          <ul class=" navbar-nav ms-auto"> <!-- ms-auto margin-left aligns navbar to the left me-auto can be used to margin-right -->
+          <ul class="navbar-nav ms-auto"> <!-- ms-auto margin-left aligns navbar to the left me-auto can be used to margin-right -->
             <li>
             <label class="switch">
               <i class="fas fa-adjust"></i>
@@ -47,18 +48,21 @@
               </div>
             </label>
           </li>
-          <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-      </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
     </nav>
+
     
   
     <section class="bgimage" id="home"> <!--bgimage is background type-->
@@ -78,24 +82,24 @@
       <div class="flex-container">
           <h1 class="text-center"><strong>About Me</strong></h1>
               
-        <div class="wrapper">
-                <div class="box a"> <img src="/images/about-img.jpg" class="imageAboutPage" alt=""></div>
-                <div class="box b">Hello! I am Alex Hernandez I am a Front-end developer. <br> I am currently a student that was pursing a career in aviation. <br> 
-                  I realized computers and learning code was my passion and the reason I am pursing to break into the tech industry as a web developer.
-                  I learned HTML5/CSS3, bootstrap5, and currently learning JavaScript and React.js . <br>
-                  All my life I have always loved computers and technology and how they work. <br> 
-                  I enjoy coding I enjoy creating websites for the free-range creativity it allows me to have. <br> </div>
-                  <div class="box c"><img src="images/about-me-picture.JPG" class="aboutMePicture" alt=""></div>
-                  <div class="box d">I enjoy manipulating a website and seeing my imagination come to life. I also enjoy the challenge the comes with coding and the difficulty of learning a new coding language. <br>
-                  Most of my school life was spent volunteering in another passion of mine music. I volunteered at my high school teaching students to improve in their selective instruments. <br>
-                  Teaching students gave me a lot of experience learning and teaching in groups of small and large. I was awarded a congressional recognition award for volunteer service. <br>
-                  My goal is to be a software developer that can contribute to a team and work on my own projects and build upon the vast world of technology and coding and contribute to it's success.</div>
-                </div>
+        <div class="about-sec">
+          <div class="box a"><img src="images/about-img.jpg" class="aboutMePicture" alt="">Hello! I am Alex Hernandez I am a Front-end developer. <br><br> I am currently a student that was pursing a career in aviation. <br><br> 
+            I realized computers and learning code was my passion and the reason I am pursing to break into the tech industry as a web developer.
+            I learned HTML5/CSS3, bootstrap5, and currently learning JavaScript and React.js <br><br>
+            All my life I have always loved computers and technology and how they work. <br> <br>
+            I enjoy coding I enjoy creating websites for the free-range creativity it allows me to have. <br><br>
+          </div>&nbsp  
+
+                  <div class="box d"> <img src="/images/about-me-picture.JPG" class="about-img" alt="">I enjoy manipulating a website and seeing my imagination come to life. I also enjoy the challenge the comes with coding and the difficulty of learning a new coding language. <br><br>
+                    Most of my school life was spent volunteering in another passion of mine music. I volunteered at my high-school teaching students to improve in their selective instruments. <br><br>
+                    Teaching students gave me a lot of experience learning and teaching in groups of small and large. I was awarded a congressional recognition award for volunteer service. <br><br>
+                    My goal is to be a software developer that can contribute to a team and work on my own projects and build upon the vast world of technology and coding and contribute to it's success.</div>
+                  </div>
               </div>
             </div>
     </section>
 
-    <!-- portfolio section-->
+    <!-- portfolio section -->
      <section id="portfolio">
       <div class="container mt-3">
           <h1 class="text-center"><strong>Portfolio</strong></h1>
@@ -125,7 +129,7 @@
             </div>
         </div>
     </div>
-    </section>
+    </section> --->
 
     <!-- contact section-->
     <section id="contact">
@@ -144,7 +148,7 @@
                       <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
                       </style>
                   </div>
-              </div>
+              </div>&nbsp
 
               <div class="col-lg-6">
                   <!-- form fields -->
