@@ -20,6 +20,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/regular.min.js"
   />
     <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script
       src="https://kit.fontawesome.com/31149d48b0.js"
       crossorigin="anonymous"
@@ -34,20 +36,8 @@
         <!-- Container class is to hold and organize multiple instances of another type either a class or a fundamental type -->
         <a class="navbar-brand" href="#Home">Alex Hernandez</a>
         <!--navbar-brand keeps name of person as a brand-->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"> 
-          <!-- "type" makes the button / data-bs-toggle makes collapsing menu / aria-expanded "false" makes navbar by default closed-->
-      </button>
-          <span class="navbar-toggle-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupprotedContent">
-          <ul class="navbar-nav ms-auto"> <!-- ms-auto margin-left aligns navbar to the left me-auto can be used to margin-right -->
+        <div id="navbarSupprotedContent">
+          <ul class=" navbar-nav ms-auto"> <!-- ms-auto margin-left aligns navbar to the left me-auto can be used to margin-right -->
             <li>
             <label class="switch">
               <i class="fas fa-adjust"></i>
@@ -57,22 +47,19 @@
               </div>
             </label>
           </li>
-            <li class="nav-item active"> <!-- active class usually goes into the main link and means that the list can contain its own execution -->
-              <a class="nav-link" href="#home">Home</a> <!--Adding # to href adds scroll links-->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a> 
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item"> 
-              <a class="nav-link" href="#contact">Contact</a> 
-            </li>
-          </ul>
-        </div>
+          <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
       </div>
+    </header>
     </nav>
+    
   
     <section class="bgimage" id="home"> <!--bgimage is background type-->
       <div class="container-fluid">
@@ -88,10 +75,8 @@
     <!--About Section-->
 
     <section id="about">
-      <div class="container">
+      <div class="flex-container">
           <h1 class="text-center"><strong>About Me</strong></h1>
-          <div class="">
-              <div class="">
               
         <div class="wrapper">
                 <div class="box a"> <img src="/images/about-img.jpg" class="imageAboutPage" alt=""></div>
