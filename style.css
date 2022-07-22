@@ -221,19 +221,26 @@ nav {
   color: white;
 }
 
-.about-sec {
-  margin: 5px;
-  
-}
+
 
 .aboutMePicture {
-  width: 50%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
   float: right;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .about-img {
-  width: 50%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
   float: right;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .navbarScroll.navbarDark {
@@ -242,6 +249,7 @@ nav {
 
 
 .box {
+  grid-template-columns: 1fr 2fr;
   background: #0F2027;
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
@@ -249,7 +257,6 @@ nav {
   border-radius: 5px;
   padding: 30px;
   font-size: 100%;
-  word-spacing: 7px;
 }
 
 .social-icons {
@@ -259,6 +266,14 @@ nav {
   font-size: 2rem;
 }
 
+.a {
+  grid-column: "col1-start / col3-start";
+  grid-row: "row1-start";
+}
 
+.b {
+  grid-column: "col3-start";
+  grid-row: "row1-start / row2-end";
+}
 
 
